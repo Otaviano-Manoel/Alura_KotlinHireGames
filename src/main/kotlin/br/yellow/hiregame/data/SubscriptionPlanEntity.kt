@@ -5,7 +5,9 @@ import java.math.BigDecimal
 import javax.persistence.DiscriminatorValue
 import javax.persistence.Entity
 
+// Indica que a classe é uma entitdade do BD
 @Entity
+// O nome da classe que sera colocada na coluna descriminada na superclasse.
 @DiscriminatorValue("Subscription")
 class SubscriptionPlanEntity(
     type: String = EnumPlan.Subscription.toString(),
